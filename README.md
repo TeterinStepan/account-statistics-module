@@ -16,10 +16,12 @@ Propel
 
 ## Пример запуска расчета статистики для организации
 
-`$module = app()->getModule('accountStatistics');`
-`$service = $module->getAccountAnalyticsService();`
-`$service->setOrganization(app()->getOrganization());`
-`$service->run()->save();`
+```PHP
+$module = app()->getModule('accountStatistics');`
+$service = $module->getAccountAnalyticsService();`
+$service->setOrganization(app()->getOrganization());`
+$service->run()->save();
+```
 
 Сервис самостоятельно сохранит данных в базу при успешном выполнении
 
